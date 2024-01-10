@@ -1,0 +1,31 @@
+
+npython:S117‚"VRename this local variable "Q_gas" to match the regular expression ^[_a-z][a-z0-9_]*$.(üäàè
+vpython:S117‡"YRename this local variable "Q_liquid" to match the regular expression ^[_a-z][a-z0-9_]*$.(øĞ»êşÿÿÿÿ
+upython:S117P"^Rename this local variable "Q_mixpipe_gas" to match the regular expression ^[_a-z][a-z0-9_]*$.(ñ²Û§
+}python:S117U"aRename this local variable "Q_mixpipe_liquid" to match the regular expression ^[_a-z][a-z0-9_]*$.(Äç„²şÿÿÿÿ
+zpython:S117M"^Rename this local variable "Q_mixpipe_oil" to match the regular expression ^[_a-z][a-z0-9_]*$.(í¼¹†úÿÿÿÿ
+|python:S117S"`Rename this local variable "Q_mixpipe_water" to match the regular expression ^[_a-z][a-z0-9_]*$.(¤Ò¾Áûÿÿÿÿ
+rpython:S117~"VRename this local variable "Q_oil" to match the regular expression ^[_a-z][a-z0-9_]*$.(¹ğãüÿÿÿÿ
+upython:S117†"XRename this local variable "Q_water" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ëòû•üÿÿÿÿ
+ipython:S117_"SRename this local variable "dP" to match the regular expression ^[_a-z][a-z0-9_]*$.(ñ²Åy
+jpython:S117\"SRename this local variable "dT" to match the regular expression ^[_a-z][a-z0-9_]*$.(´Ì‡‡
+upython:S117A"WRename this local variable "i_Note" to match the regular expression ^[_a-z][a-z0-9_]*$.(°¡ÿª8åæıéÊ1
+upython:S117?"YRename this local variable "i_Source" to match the regular expression ^[_a-z][a-z0-9_]*$.(ò¨ÊĞûÿÿÿÿ
+upython:S117@"YRename this local variable "i_Target" to match the regular expression ^[_a-z][a-z0-9_]*$.(º‘şÿÿÿÿ
+rpython:S117"[Rename this local variable "mixpipe_Pe" to match the regular expression ^[_a-z][a-z0-9_]*$.(üÁ‹
+wpython:S117"[Rename this local variable "mixpipe_Ps" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÙîĞƒøÿÿÿÿ
+wpython:S117"[Rename this local variable "mixpipe_dP" to match the regular expression ^[_a-z][a-z0-9_]*$.(¤Å“Úüÿÿÿÿ
+rpython:S117"[Rename this local variable "mixpipe_dT" to match the regular expression ^[_a-z][a-z0-9_]*$.(±Öµº
+spython:S1175"WRename this local variable "msep_P" to match the regular expression ^[_a-z][a-z0-9_]*$.(ôËõûÿÿÿÿ
+npython:S1176"WRename this local variable "msep_T" to match the regular expression ^[_a-z][a-z0-9_]*$.(„ùİÍ
+qpython:S117Ô"YRename this local variable "objv_Oil" to match the regular expression ^[_a-z][a-z0-9_]*$.(òÔóı
+spython:S117#"WRename this local variable "plat_P" to match the regular expression ^[_a-z][a-z0-9_]*$.( Õ¹–ÿÿÿÿÿ
+npython:S117$"WRename this local variable "plat_T" to match the regular expression ^[_a-z][a-z0-9_]*$.(˜ç×·
+ipython:S1542"LRename function "oilCal" to match the regular expression ^[a-z_][a-z0-9_]*$.(†£¼ùÿÿÿÿ
+Dpython:S1481%",Remove the unused local variable "plat_pro".(ç†ÃÀ
+Ipython:S1481="*Remove the unused local variable "i_type".(™ÄÁÚ8°÷€êÊ1
+Kpython:S1481>",Remove the unused local variable "i_entity".(•ôˆ‹8ıÔ€êÊ1
+qpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 35 to the 15 allowed.(†£¼ùÿÿÿÿ
+Cpython:S5806o"+Rename this variable; it shadows a builtin.(Ú¸ë
+python:S1871­"cEither merge this branch with the identical one on line "159" or change one of the implementations.(»©µøÿÿÿÿ
+<python:S125"Remove this commented out code.(ºˆŠÌøÿÿÿÿ

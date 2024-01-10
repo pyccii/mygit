@@ -1,0 +1,18 @@
+
+qpython:S1176"SRename this local variable "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(³ôäÛ8şÖšÍ1
+zpython:S1174"WRename this local variable "Source" to match the regular expression ^[_a-z][a-z0-9_]*$.(Î¨Üãÿÿÿÿÿ8şÖšÍ1
+xpython:S117"ZRename this local variable "filePath1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¿ãƒ8şÖšÍ1
+wpython:S117"ZRename this local variable "filePath2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¨–ÿi8şÖšÍ1
+upython:S1171"WRename this local variable "getLib" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÃÊŸó8şÖšÍ1
+}python:S117@"ZRename this local variable "obj_Water" to match the regular expression ^[_a-z][a-z0-9_]*$.(ƒõ†¯ıÿÿÿÿ8ÿÖšÍ1
+|python:S117"YRename this local variable "objv_Oil" to match the regular expression ^[_a-z][a-z0-9_]*$.(‚Ğ¢åùÿÿÿÿ8ÿÖšÍ1
+|python:S117="YRename this local variable "saveData" to match the regular expression ^[_a-z][a-z0-9_]*$.(¡¤®³ıÿÿÿÿ8ÿÖšÍ1
+tpython:S1542"PRename function "processSim" to match the regular expression ^[a-z_][a-z0-9_]*$.(¿²á…øÿÿÿÿ8ÿÖšÍ1
+Ppython:S1481=",Remove the unused local variable "saveData".(¡¤®³ıÿÿÿÿ8ÿÖšÍ1
+Npython:S1481["*Remove the unused local variable "res_df".(ı‘„×øÿÿÿÿ8ÿÖšÍ1
+xpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(¿²á…øÿÿÿÿ8ÿÖšÍ1
+Opython:S5806"+Rename this variable; it shadows a builtin.(—Ìâ¡úÿÿÿÿ8ÿÖšÍ1
+Jpython:S5806I"+Rename this variable; it shadows a builtin.(Ÿ‡— 8ÿÖšÍ1
+=python:S125L"Remove this commented out code.(¶º8áüÃÍ1
+Bpython:S125e"Remove this commented out code.(ß¾˜úşÿÿÿÿ8ÿÖšÍ1
+Bpython:S125m"Remove this commented out code.(èÖºşıÿÿÿÿ8ÿÖšÍ1

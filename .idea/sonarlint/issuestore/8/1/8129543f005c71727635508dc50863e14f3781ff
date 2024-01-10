@@ -1,0 +1,12 @@
+
+upython:S11924"QDefine a constant instead of duplicating this literal "application/json" 3 times.(ÍÉÊéüÿÿÿÿ8©µØšË1
+Bpython:S125
+"Remove this commented out code.(»ö·¿şÿÿÿÿ8ªµØšË1
+Lpython:S1481>"-Remove the unused local variable "res_state".(‚¹†è8¡Ä³òÌ1
+Hpython:S1481A")Remove the unused local variable "count".(¾š8¡Ä³òÌ1
+Ppython:S1481@",Remove the unused local variable "residual".(œĞíÛıÿÿÿÿ8¡Ä³òÌ1
+Bpython:S125B"Remove this commented out code.(éªËØùÿÿÿÿ8¡Ä³òÌ1
+qpython:S1542g"RRename function "getLibEntity" to match the regular expression ^[a-z_][a-z0-9_]*$.(Şì‚å8ªµØšË1
+=python:S125x"Remove this commented out code.(«—ØŒ8ªµØšË1
+rpython:S1542"SRename function "saveLibEntity" to match the regular expression ^[a-z_][a-z0-9_]*$.(äå­â8ªµØšË1
+ppython:S1542”"PRename function "getFileDir" to match the regular expression ^[a-z_][a-z0-9_]*$.(¥œÚê8ªµØšË1

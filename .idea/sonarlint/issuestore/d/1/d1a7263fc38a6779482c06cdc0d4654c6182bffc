@@ -1,0 +1,9 @@
+
+mpython:S1192E"IDefine a constant instead of duplicating this literal '/output/' 5 times.(ãŒÔ¯ùÿÿÿÿ8‘ã†ÁÎ1
+|python:S117E"YRename this local variable "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(ãŒÔ¯ùÿÿÿÿ8‘ã†ÁÎ1
+gpython:S1542c"IRename function "Adj" to match the regular expression ^[a-z_][a-z0-9_]*$.(´·Öj8‘ã†ÁÎ1
+|python:S117k"YRename this local variable "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(ãŒÔ¯ùÿÿÿÿ8‘ã†ÁÎ1
+|python:S117v"YRename this local variable "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(ñÍÎÿÿÿÿÿ8‘ã†ÁÎ1
+|python:S117}"YRename this local variable "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(ñÍÎÿÿÿÿÿ8‘ã†ÁÎ1
+}python:S117…"YRename this local variable "filePath" to match the regular expression ^[_a-z][a-z0-9_]*$.(ãŒÔ¯ùÿÿÿÿ8‘ã†ÁÎ1
+opython:S1542ƒ"ORename function "deleteAll" to match the regular expression ^[a-z_][a-z0-9_]*$.(ùíÖ¾8‘ã†ÁÎ1

@@ -1,0 +1,52 @@
+
+qpython:S117–"SRename this local variable "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(«‚ıf8¢ŞÿÃÍ1
+{python:S117”"WRename this local variable "Source" to match the regular expression ^[_a-z][a-z0-9_]*$.(Î¨Üãÿÿÿÿÿ8£ŞÿÃÍ1
+{python:S117l"XRename this local variable "egetLib" to match the regular expression ^[_a-z][a-z0-9_]*$.(‚âğÒøÿÿÿÿ8£ŞÿÃÍ1
+{python:S117_"XRename this local variable "epipeId" to match the regular expression ^[_a-z][a-z0-9_]*$.(ØÈÒüÿÿÿÿ8£ŞÿÃÍ1
+}python:S117o"ZRename this local variable "eplatType" to match the regular expression ^[_a-z][a-z0-9_]*$.(­ò…üÿÿÿÿ8£ŞÿÃÍ1
+xpython:S117"ZRename this local variable "filePath1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¿ãƒ8£ŞÿÃÍ1
+wpython:S117"ZRename this local variable "filePath2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¨–ÿi8£ŞÿÃÍ1
+upython:S117>"WRename this local variable "getLib" to match the regular expression ^[_a-z][a-z0-9_]*$.(Öâßƒ8£ŞÿÃÍ1
+wpython:S117“"XRename this local variable "getLib2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¦Ù©8£ŞÿÃÍ1
+wpython:S117å"XRename this local variable "getLib3" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÆˆÍÜ8£ŞÿÃÍ1
+ypython:S117¡"ZRename this local variable "limitFlow" to match the regular expression ^[_a-z][a-z0-9_]*$.(¡õó8£ŞÿÃÍ1
+|python:S117 "XRename this local variable "limitId" to match the regular expression ^[_a-z][a-z0-9_]*$.(³Í‘ıÿÿÿÿ8£ŞÿÃÍ1
+python:S117Ÿ"[Rename this local variable "limitIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÈÒ°úÿÿÿÿ8£ŞÿÃÍ1
+{python:S1172"XRename this local variable "mpipeId" to match the regular expression ^[_a-z][a-z0-9_]*$.(’¼œÙúÿÿÿÿ8£ŞÿÃÍ1
+~python:S117œ"ZRename this local variable "obj_Water" to match the regular expression ^[_a-z][a-z0-9_]*$.(ƒõ†¯ıÿÿÿÿ8£ŞÿÃÍ1
+|python:S117$"YRename this local variable "objv_Oil" to match the regular expression ^[_a-z][a-z0-9_]*$.(‚Ğ¢åùÿÿÿÿ8£ŞÿÃÍ1
+}python:S1171"_Rename this local variable "pipeFlaseIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(Î©ê°8£ŞÿÃÍ1
+zpython:S117+"WRename this local variable "pipeId" to match the regular expression ^[_a-z][a-z0-9_]*$.(®¾ÅÅüÿÿÿÿ8£ŞÿÃÍ1
+{python:S117x"XRename this local variable "pipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(´¹‹Áşÿÿÿÿ8£ŞÿÃÍ1
+„python:S117"aRename this local variable "pipeUpstreamPlat" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ùˆ¨şÿÿÿÿ8£ŞÿÃÍ1
+|python:S117A"YRename this local variable "platType" to match the regular expression ^[_a-z][a-z0-9_]*$.(®´¯¤úÿÿÿÿ8£ŞÿÃÍ1
+ypython:S117è"ZRename this local variable "platType3" to match the regular expression ^[_a-z][a-z0-9_]*$.(ñˆ±”8£ŞÿÃÍ1
+{python:S117ñ"WRename this local variable "pumpId" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ó©–±ûÿÿÿÿ8£ŞÿÃÍ1
+upython:S117¬"VRename this local variable "sepId" to match the regular expression ^[_a-z][a-z0-9_]*$.(ñç×½8£ŞÿÃÍ1
+Lpython:S1481"-Remove the unused local variable "filePath1".(¿ãƒ8£ŞÿÃÍ1
+Opython:S1481ê"*Remove the unused local variable "test31".(íÀÌùüÿÿÿÿ8£ŞÿÃÍ1
+Opython:S1481í"*Remove the unused local variable "test32".(‘ô—üşÿÿÿÿ8£ŞÿÃÍ1
+Gpython:S1481K"(Remove the unused local variable "save".(…€àÂ8£ŞÿÃÍ1
+Mpython:S1481¡"-Remove the unused local variable "limitFlow".(¡õó8£ŞÿÃÍ1
+Lpython:S1481h"(Remove the unused local variable "num2".(İôâúÿÿÿÿ8£ŞÿÃÍ1
+Mpython:S1481q")Remove the unused local variable "test1".(»‹Òÿÿÿÿÿ8£ŞÿÃÍ1
+Ppython:S1481 ",Remove the unused local variable "cep_upsp".(ñ óÿÿÿÿÿ8£ŞÿÃÍ1
+Hpython:S1481t")Remove the unused local variable "test2".(€–ŞŠ8£ŞÿÃÍ1
+Kpython:S1481"-Remove the unused local variable "filePath2".(¨–ÿi8£ŞÿÃÍ1
+spython:S3776"TRefactor this function to reduce its Cognitive Complexity from 63 to the 15 allowed.(¨‘ĞÏ8£ŞÿÃÍ1
+lpython:S6729:"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(¡š¼µ8£ŞÿÃÍ1
+Spython:S1135H"4Complete the task associated to this "TODO" comment.(§—«8£ŞÿÃÍ1
+Xpython:S1135I"4Complete the task associated to this "TODO" comment.(ÎÅ•¾úÿÿÿÿ8£ŞÿÃÍ1
+qpython:S6729U"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(´ÊÂ°ıÿÿÿÿ8£ŞÿÃÍ1
+Spython:S1135^"4Complete the task associated to this "TODO" comment.(åË­8£ŞÿÃÍ1
+lpython:S6729e"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(ˆÖ±8£ŞÿÃÍ1
+lpython:S6729|"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(£×”î8¤ŞÿÃÍ1
+Ppython:S5806ƒ"+Rename this variable; it shadows a builtin.(—Ìâ¡úÿÿÿÿ8¤ŞÿÃÍ1
+Tpython:S1135"4Complete the task associated to this "TODO" comment.(ì ¤8¤ŞÿÃÍ1
+Cpython:S125´"Remove this commented out code.(Ğúöúÿÿÿÿ8¤ŞÿÃÍ1
+>python:S125Æ"Remove this commented out code.(Õ¼Ç‰8¤ŞÿÃÍ1
+>python:S125Ï"Remove this commented out code.(ŒäÌæ8¤ŞÿÃÍ1
+Cpython:S125×"Remove this commented out code.(¸’„ûÿÿÿÿ8¤ŞÿÃÍ1
+Hpython:S108ü")Either remove or fill this block of code.(ã‘Û¾8¤ŞÿÃÍ1
+Kpython:S5806†"+Rename this variable; it shadows a builtin.(Ÿ‡— 8¤ŞÿÃÍ1
+>python:S125Š"Remove this commented out code.(¶º8¤ŞÿÃÍ1
