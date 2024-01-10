@@ -28,3 +28,6 @@ D
 src/uploadOptData.py,c\b\cb1c45585293093bd4fa892bf93d8333510c370d
 9
 	mineng.py,d\d\dd8d569e1f61baf4476a9bced1f2233ee1ddd16a
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
