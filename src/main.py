@@ -11,8 +11,7 @@ from fastapi.openapi.docs import get_redoc_html, get_swagger_ui_html
 from adjust import adjust
 from methods import uploadOptData
 import datetime
-from maxpro import opt
-from pydantic import BaseModel
+from maxPro import opt
 
 app = FastAPI(
     title="秦皇岛32-6油水调控优化计算模型",
