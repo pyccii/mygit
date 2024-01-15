@@ -1,13 +1,13 @@
 import json
 import os
+
 import requests
-from set import flowsim_url, token, Authorization
+
+from set import flowsim_url, token
 
 
 def upload_file(file_path):
     url = flowsim_url + "/file/upload"
-
-    # file_path = r'D:\QHD32-6_MProject\模型输入\{}'.format(file_name)
     headers = {
         "Accept": "*/*",
         "myToken": token,

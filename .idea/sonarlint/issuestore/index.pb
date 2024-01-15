@@ -18,16 +18,26 @@ src/set.py,8\1\814a9b312e2a369b49a5dcd298e110833d19025f
 src/oilCal.py,5\9\59694fff81b68a0b387f2b1cd88d28bacb92619b
 =
 src/adjust.py,4\c\4c12de19a55a3148ebd52f8ad7a9844eb3dfb7ed
-D
-src/maxProduction.py,b\2\b20aabb40f1651b990f3bf8544052d024e46ed19
 =
 src/maxpro.py,0\c\0c246fcbae22ae8ef91bd7b940804730f9c1ba72
 ?
 src/jsonData.py,8\f\8f8717d6fe1dcc1b589b6d371bc0b311a68ed2b9
 D
 src/uploadOptData.py,c\b\cb1c45585293093bd4fa892bf93d8333510c370d
-9
-	mineng.py,d\d\dd8d569e1f61baf4476a9bced1f2233ee1ddd16a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+=
+src/maxPro.py,6\e\6e79517d7bcc75285dbe7759efed927b062a2938
+@
+src/minEnergy.py,4\2\42d0dcdc5dfea7f90eee2f7bc9c5115f8a0a4ee2
+?
+src/minMedic.py,9\5\95518350ce9fca2cc72633226c7b15f8449c3328
+>
+src/minOper.py,d\e\de10a3e540dad19dbe367ae60e1355313779cc45
+@
+src/minLabour.py,c\3\c3d9ccee70d619d87d5df9b56819aa184d2a9749
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

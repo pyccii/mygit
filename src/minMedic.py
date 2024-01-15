@@ -13,7 +13,7 @@ from set import token
 from waterCal import waterCal
 
 
-def optEnergy(filename_oil, filename_water):
+def optMedic(filename_oil, filename_water):
     try:
         print(datetime.datetime.now())
         script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -40,18 +40,11 @@ def optEnergy(filename_oil, filename_water):
                     'CEPI': ['WHPB-I', 'CEPI', 'WHPC', 'WHPA-I']}
 
         mixpipe_df1, plat_df1, sep_df1, objv_Oil1, sep_out1 = oilCal(filename_oil)
-
-        print('-------------------------------------------------------')
-        print('优化前的产油量:', objv_Oil1[0], ',优化前的产液量:', objv_Oil1[3])
-
         delete_file(filename_oil, token)
-
         pipeId1 = mixpipe_df1['名称'].values
         pipeFlow1 = mixpipe_df1['液'].values
         designFlow1 = mixpipe_df1['设计输量'].values
         differPipe1 = designFlow1 - pipeFlow1
-
-        # 超限的管线
         pipeFlaseIndex1 = [i1 for i1, x1 in enumerate(differPipe1) if x1 < 0]
         mpipeId1 = pipeId1[pipeFlaseIndex1]
         mflow1 = differPipe1[pipeFlaseIndex1]
@@ -142,7 +135,7 @@ def optEnergy(filename_oil, filename_water):
         upload_file(filePath2)
         pipe_df2, injpump_df2, boosterpump_df2, well_df2, wsep_df2, obj_Water2 = waterCal(filename_water)
         delete_file(filename_water, token)
-        iniobj = obj_Water2[-2]
+        inimedic = obj_Water2[-1]
 
         num = 0
         while num <= 3:
@@ -175,12 +168,12 @@ def optEnergy(filename_oil, filename_water):
                     wb.save(savepath)
                     upload_file(savepath)
                     pipe_df2, injpump_df2, boosterpump_df2, well_df2, wsep_df2, obj_Water2 = waterCal(savefile)
-                    differObj = obj_Water2[-2] - iniobj
+                    differObj = obj_Water2[-1] - inimedic
 
                     resCheck = check(mixpipe_df1, sep_df1, wsep_df2, pipe_df2, injpump_df2, boosterpump_df2, well_df2)
                     if not resCheck:
                         pumpList.append(thisPumpName)
-                        energyList.append(obj_Water2[-2] - iniobj)
+                        energyList.append(obj_Water2[-1] - inimedic)
 
             minEnergy = min(energyList)
             minPumpId = pumpList[energyList.index(minEnergy)]
@@ -203,26 +196,21 @@ def optEnergy(filename_oil, filename_water):
             wb.save(filePath2)
             num += 1
 
-        medicPrice = [objv_Oil1[-1] + obj_Water2[-1]]
-        objv = objv_Oil1 + obj_Water2 + medicPrice
+        objv = objv_Oil1 + obj_Water2
         objv_array = np.array(objv)[np.newaxis, :]
         objv_df2 = pd.DataFrame(
             objv_array, columns=['总产油量', '总产气量', '总产水量', '总产液量',
-                                 '混输海管', '油处理系统', '油处理药剂', '总注水量', '总处理水量',
-                                 '注水泵', '增压泵', '注水管线', '注水井', '注水泵能耗', '水处理药剂', '总药剂花费']
+                                 '混输海管', '油处理系统', '总注水量', '总处理水量',
+                                 '注水泵', '增压泵', '注水管线', '注水井', '注水泵能耗']
         )
 
-        script_dir = os.path.dirname(os.path.abspath(__file__))
+        script_dir = os.getcwd()
         dir = script_dir.replace("\\", "/") + "/output/"
         os.makedirs(dir, exist_ok=True)
-        print(datetime.datetime.now())
         current_time = int(datetime.datetime.now().timestamp())
         file_name = "{}.xlsx".format(current_time)
         file_path = dir + "{}.xlsx".format(current_time)
         with pd.ExcelWriter(file_path) as writer:
-            plat_df1.to_excel(writer, sheet_name='平台', index=False, float_format='%.2f')
-            mixpipe_df1.to_excel(writer, sheet_name='混输管线', index=False, float_format='%.2f')
-            sep_df1.to_excel(writer, sheet_name='油处理系统', index=False, float_format='%.2f')
             wsep_df2.to_excel(writer, sheet_name='水处理系统', index=False, float_format='%.2f')
             injpump_df2.to_excel(writer, sheet_name='注水泵', index=False, float_format='%.2f')
             boosterpump_df2.to_excel(writer, sheet_name='增压泵', index=False, float_format='%.2f')
@@ -232,12 +220,10 @@ def optEnergy(filename_oil, filename_water):
         return file_name
 
     except  Exception:
-        print('------------------------exception---------------------')
+        print('------------------------MedicException---------------------')
         script_dir = os.path.dirname(os.path.abspath(__file__))
         dir = script_dir.replace("\\", "/") + "/output/"
         os.makedirs(dir, exist_ok=True)
-        file = '1705151981.xlsx'
-        file_name = dir + file
+        file = '1705151982.xlsx'
         print(datetime.datetime.now())
         return file
-

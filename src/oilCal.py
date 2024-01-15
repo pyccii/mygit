@@ -1,4 +1,5 @@
-import numpy as np
+import json
+
 import pandas as pd
 
 from interface import netsim_steady, getLibEntity
@@ -209,7 +210,20 @@ def oilCal(file_name):
     sum_mixpipe_liquid = sum(mixpipe_liquid)
     sum_msep_liquid = sum(msep_liquid)
 
-    objv_Oil = [sum_plat_oil, sum_plat_gas, sum_plat_water, sum_plat_liquid, sum_mixpipe_liquid, sum_msep_liquid]
+    oilMedic = 0
+    for i in range(len(msep_id)):
+        msepplat1 = msep_id[i].split('-')[0]
+        msepLiq = msep_liquid[i]
+        for j in range(len(opt_data)):
+            msepplat2 = opt_data[j]['myName'].split('-')[0]
+            price = opt_data[j]['myNote']
+            if msepplat2 == msepplat1 and price != '0':
+                a = json.loads(price)
+                b = json.loads(opt_data[j]['myValue'])
+                oilMedic += msepLiq * a * b
+
+    objv_Oil = [sum_plat_oil, sum_plat_gas, sum_plat_water, sum_plat_liquid, sum_mixpipe_liquid, sum_msep_liquid,
+                oilMedic]
     res_oil = [mixpipe_df, plat_df, sep_df, objv_Oil, list]
 
     return res_oil

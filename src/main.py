@@ -1,17 +1,23 @@
-import uvicorn
-import os
-from fastapi import FastAPI, Depends, HTTPException, File, UploadFile
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
-from processsim import processSim
-from interface import upload_file, getFileDir, netsim_steady
-from typing import List
-from fastapi.openapi.docs import get_redoc_html, get_swagger_ui_html
-from adjust import adjust
-from methods import uploadOptData
 import datetime
-from maxPro import opt
+import os
+from typing import List
+
+import uvicorn
+from fastapi import FastAPI, Depends, HTTPException, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.openapi.docs import get_redoc_html, get_swagger_ui_html
+from fastapi.responses import FileResponse
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
+
+from adjust import adjust
+from interface import upload_file, getFileDir
+from maxPro import optPro
+from methods import uploadOptData
+from minEnergy import optEnergy
+from minLabour import optLabor
+from minMedic import optMedic
+from minOper import optOpe
+from processsim import processSim
 
 app = FastAPI(
     title="秦皇岛32-6油水调控优化计算模型",
@@ -88,9 +94,33 @@ async def simulation(data: dict):
     return result_file_path
 
 
-@app.post("/opt")
-async def optimize(data: dict):
-    result_file_path = opt(data['filename_oil'], data['filename_water'])
+@app.post("/optPro")
+async def optimize1(data: dict):
+    result_file_path = optPro(data['filename_oil'], data['filename_water'])
+    return result_file_path
+
+
+@app.post("/optEne")
+async def optimize2(data: dict):
+    result_file_path = optEnergy(data['filename_oil'], data['filename_water'])
+    return result_file_path
+
+
+@app.post("/optMed")
+async def optimize3(data: dict):
+    result_file_path = optMedic(data['filename_oil'], data['filename_water'])
+    return result_file_path
+
+
+@app.post("/optOpe")
+async def optimize4(data: dict):
+    result_file_path = optOpe(data['filename_oil'], data['filename_water'])
+    return result_file_path
+
+
+@app.post("/optLab")
+async def optimize5(data: dict):
+    result_file_path = optLabor(data['filename_oil'], data['filename_water'])
     return result_file_path
 
 

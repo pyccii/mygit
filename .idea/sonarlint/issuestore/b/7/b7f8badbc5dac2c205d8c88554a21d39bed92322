@@ -1,6 +1,36 @@
 
-ppython:S1192F"LDefine a constant instead of duplicating this literal 'oil_set.xls' 3 times.(˜»ùíüÿÿÿÿ8ŒÑèÉÎ1
-mpython:S1192”"NDefine a constant instead of duplicating this literal 'water_set.xls' 3 times.(ËÊºR8ŒÑèÉÎ1
-rpython:S15428"SRename function "uploadOptData" to match the regular expression ^[a-z_][a-z0-9_]*$.(…ÄÍĞ8ŒÑèÉÎ1
-Kpython:S1481A",Remove the unused local variable "welldata".(·‰£¬8ŒÑèÉÎ1
-spython:S37768"TRefactor this function to reduce its Cognitive Complexity from 92 to the 15 allowed.(…ÄÍĞ8ŒÑèÉÎ1
+mpython:S1192š"NDefine a constant instead of duplicating this literal 'water_set.xls' 3 times.(ËÊºR8›Ä¦–Ğ1
+ppython:S1192G"LDefine a constant instead of duplicating this literal 'oil_set.xls' 3 times.(˜»ùíüÿÿÿÿ8›Ä¦–Ğ1
+rpython:S15427"SRename function "uploadOptData" to match the regular expression ^[a-z_][a-z0-9_]*$.(…ÄÍĞ8›Ä¦–Ğ1
+Kpython:S1481A",Remove the unused local variable "welldata".(·‰£¬8›Ä¦–Ğ1
+tpython:S37767"URefactor this function to reduce its Cognitive Complexity from 102 to the 15 allowed.(…ÄÍĞ8›Ä¦–Ğ1
+Ppython:S1172Ú"0Remove the unused function parameter "well_df2".(Î®Ì¡8›Ä¦–Ğ1
+…python:S117"aRename this local variable "boosterpumpFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(±ÒÌÔşÿÿÿÿ8›Ä¦–Ğ1
+ƒpython:S117Œ"_Rename this local variable "boosterpumpId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ûê“øÿÿÿÿ8›Ä¦–Ğ1
+‹python:S117"gRename this local variable "boosterpumpdesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(‹¦ûÆşÿÿÿÿ8›Ä¦–Ğ1
+€python:S117â"\Rename this local variable "designFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ñ³æÎúÿÿÿÿ8›Ä¦–Ğ1
+~python:S117‡"`Rename this local variable "differInjpump21" to match the regular expression ^[_a-z][a-z0-9_]*$.(‰§\8›Ä¦–Ğ1
+€python:S117ã"\Rename this local variable "differPipe2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ï¢ãøûÿÿÿÿ8›Ä¦–Ğ1
+zpython:S117ì"[Rename this local variable "differSep2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å¤¨¶8›Ä¦–Ğ1
+|python:S117ş"]Rename this local variable "differWpipe2" to match the regular expression ^[_a-z][a-z0-9_]*$.(“Û´8›Ä¦–Ğ1
+{python:S117õ"\Rename this local variable "differWsep2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ÿœ–¹8›Ä¦–Ğ1
+|python:S117…"]Rename this local variable "injpumpFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(×æƒ8›Ä¦–Ğ1
+python:S117„"[Rename this local variable "injpumpId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(éııøÿÿÿÿ8›Ä¦–Ğ1
+‚python:S117†"cRename this local variable "injpumpdesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ûà„•8›Ä¦–Ğ1
+ypython:S117İ"ZRename this local variable "limitFlow" to match the regular expression ^[_a-z][a-z0-9_]*$.(¡õó8›Ä¦–Ğ1
+|python:S117Ü"XRename this local variable "limitId" to match the regular expression ^[_a-z][a-z0-9_]*$.(³Í‘ıÿÿÿÿ8›Ä¦–Ğ1
+python:S117Û"[Rename this local variable "limitIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÈÒ°úÿÿÿÿ8›Ä¦–Ğ1
+~python:S117á"ZRename this local variable "pipeFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ú‡Ñíøÿÿÿÿ8›Ä¦–Ğ1
+|python:S117à"XRename this local variable "pipeId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¼°ªêøÿÿÿÿ8›Ä¦–Ğ1
+}python:S117ê"YRename this local variable "sepFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(œà×¤úÿÿÿÿ8›Ä¦–Ğ1
+{python:S117é"WRename this local variable "sepId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(æßùÿÿÿÿ8›Ä¦–Ğ1
+ƒpython:S117ë"_Rename this local variable "sepdesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ïâ€÷ÿÿÿÿÿ8›Ä¦–Ğ1
+zpython:S117ü"[Rename this local variable "wpipeFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ˆñè 8›Ä¦–Ğ1
+xpython:S117û"YRename this local variable "wpipeId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(â±¨Ö8›Ä¦–Ğ1
+…python:S117ı"aRename this local variable "wpipedesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ØÙÒûÿÿÿÿ8›Ä¦–Ğ1
+ypython:S117ó"ZRename this local variable "wsepFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(„¹Â¶8›Ä¦–Ğ1
+|python:S117ò"XRename this local variable "wsepId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ƒ®œ…ùÿÿÿÿ8›Ä¦–Ğ1
+python:S117ô"`Rename this local variable "wsepdesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¸–­ƒ8›Ä¦–Ğ1
+Mpython:S1481İ"-Remove the unused local variable "limitFlow".(¡õó8›Ä¦–Ğ1
+Ppython:S1481Ü"+Remove the unused local variable "limitId".(³Í‘ıÿÿÿÿ8›Ä¦–Ğ1
+Cpython:S125”"Remove this commented out code.(¸’„ûÿÿÿÿ8›Ä¦–Ğ1

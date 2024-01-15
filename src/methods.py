@@ -1,10 +1,9 @@
-import numpy as np
 import os
-from fastapi.responses import FileResponse
-import pandas as pd
+
+import numpy as np
 import xlrd
-import xlwt
 from xlutils.copy import copy
+
 
 def split_str(string: str, sep_symbol):
     if sep_symbol in string:
@@ -55,6 +54,7 @@ def save_file(file_name, content):
 
 def uploadOptData(data_dict):
     try:
+        print(data_dict)
         platdata = data_dict['liqSetting']
         mixpipedata = data_dict['oilSetting']
         msepdata = data_dict['sepSetting']
@@ -63,14 +63,15 @@ def uploadOptData(data_dict):
         bpumpdata = data_dict['bootPumpSetting']
         ipumpdata = data_dict['pumpSetting']
         welldata = data_dict['injWellSetting']
+        medicdata = data_dict['mediSetting']
 
         script_dir = os.getcwd()
         base_dir = script_dir.replace('\\', '/') + '/output/'
 
         rb = xlrd.open_workbook('oil_set.xls', formatting_info=True)
-        rs = rb.sheet_by_index(4)
-        ro = rb.sheet_by_index(3)
-        rc = rb.sheet_by_index(5)
+        rs = rb.sheet_by_index(4)  # Stream
+        ro = rb.sheet_by_index(3)  # Opt
+        rc = rb.sheet_by_index(5)  # Fluid
 
         wb = copy(rb)
         ws = wb.get_sheet(4)
@@ -115,16 +116,21 @@ def uploadOptData(data_dict):
         for row_num in range(ro.nrows):
             row_list = ro.row_values(row_num)
             qo = row_list[6]
+            qw = row_list[5]
             for i in range(len(mixpipedata)):
                 if mixpipedata[i]['pipeName'] == row_list[4]:
                     qo = mixpipedata[i]['designThroughput']
             for j in range(len(msepdata)):
                 if msepdata[j]['sepName'] == row_list[4]:
                     qo = msepdata[j]['maxProcessing']
+            for k in range(len(medicdata)):
+                if medicdata[k]['mediName'] == row_list[4]:
+                    qo = medicdata[k]['mediCon']
+                    qw = medicdata[k]['unitPrice']
             if qo == None:
                 qo = ''
-
             wo.write(num - 1, 6, str(qo))
+            wo.write(num - 1, 5, str(qw))
             num += 1
 
         num = 1
@@ -151,13 +157,14 @@ def uploadOptData(data_dict):
 
         # Create a writable copy of the original workbook
         wb2 = copy(rb2)
-        ws2 = wb2.get_sheet(3)
-        wp2 = wb2.get_sheet(6)
+        ws2 = wb2.get_sheet(3)  # Opt
+        wp2 = wb2.get_sheet(6)  # Pump
 
         num = 1
         for row_num in range(rs2.nrows):
             row_list = rs2.row_values(row_num)
             qoo = row_list[6]
+            qow = row_list[5]
             for i in range(len(pipedata)):
                 if pipedata[i]['pipeName'] == row_list[4]:
                     qoo = pipedata[i]['designThroughput']
@@ -166,10 +173,15 @@ def uploadOptData(data_dict):
                 if wsepdata[j]['equipmentName'] == row_list[4]:
                     qoo = wsepdata[j]['maxProcessing']
 
+            for k in range(len(medicdata)):
+                if medicdata[k]['mediName'] == row_list[4]:
+                    qoo = medicdata[k]['mediCon']
+                    qow = medicdata[k]['unitPrice']
             if qoo == None:
                 qoo = ''
 
             ws2.write(num - 1, 6, str(qoo))
+            ws2.write(num - 1, 5, str(qow))
             num += 1
 
         num = 1
@@ -185,22 +197,91 @@ def uploadOptData(data_dict):
                     qp = bpumpdata[j]['runStatus']
             if qp == None:
                 qp = ''
-
-            wp2.write(num - 1, 8, str(qp))
+            wp2.write(num - 1, 8, qp)
             num += 1
 
         file2 = 'water_set.xls'
         newfile2 = base_dir + file2
         wb2.save(newfile2)
         res = [file1, file2]
-        print('1')
         return res
 
     except Exception:
-        print('2')
+        print('------------------------uploadDataException---------------------')
+        print(data_dict)
         file1 = 'oil_set.xls'
         file2 = 'water_set.xls'
         res = [file1, file2]
         return res
 
 
+def check(mixpipe_df1, sep_df1, wsep_df2, pipe_df2, injpump_df2, boosterpump_df2, well_df2):
+    limitIndex = []
+    limitId = []
+    limitFlow = []
+
+    # 混输管线
+    pipeId2 = mixpipe_df1['名称'].values
+    pipeFlow2 = mixpipe_df1['液'].values
+    designFlow2 = mixpipe_df1['设计输量'].values
+    differPipe2 = designFlow2 - pipeFlow2
+    findex1 = [num for num, x in enumerate(differPipe2) if x < 0]
+    fid1 = pipeId2[findex1].tolist()
+    fflow1 = differPipe2[findex1].tolist()
+
+    # 油分离器
+    sepId2 = sep_df1['名称'].values
+    sepFlow2 = sep_df1['液'].values
+    sepdesignFlow2 = sep_df1['最大处理量'].values
+    differSep2 = sepdesignFlow2 - sepFlow2
+    findex2 = [num for num, x in enumerate(differSep2) if x < 0]
+    fid2 = sepId2[findex2].tolist()
+    fflow2 = differSep2[findex2].tolist()
+
+    # 水分离器
+    wsepId2 = wsep_df2['名称'].values
+    wsepFlow2 = wsep_df2['处理量'].values
+    wsepdesignFlow2 = wsep_df2['最大处理量'].values
+    differWsep2 = wsepdesignFlow2 - wsepFlow2
+    findex3 = [num for num, x in enumerate(differWsep2) if x < 0]
+    fid3 = wsepId2[findex3].tolist()
+    fflow3 = differWsep2[findex3].tolist()
+
+    # 注水管线
+    wpipeId2 = pipe_df2['名称'].values
+    wpipeFlow2 = pipe_df2['输量'].values
+    wpipedesignFlow2 = pipe_df2['设计输量'].values
+    differWpipe2 = wpipedesignFlow2 - wpipeFlow2
+    findex4 = [num for num, x in enumerate(differWpipe2) if x < 0]
+    fid4 = wpipeId2[findex4].tolist()
+    fflow4 = differWpipe2[findex4].tolist()
+
+    # 增压和注水泵
+    injpumpId2 = injpump_df2['名称'].values
+    injpumpFlow2 = injpump_df2['排量'].values
+    injpumpdesignFlow2 = injpump_df2['额定排量'].values
+    differInjpump21 = injpumpdesignFlow2 * 1.3 - injpumpFlow2
+    findex5 = [num for num, x in enumerate(differInjpump21) if x < 0]
+    fid5 = injpumpId2[findex5].tolist()
+    fflow5 = differInjpump21[findex5].tolist()
+
+    boosterpumpId2 = boosterpump_df2['名称'].values
+    boosterpumpFlow2 = boosterpump_df2['排量'].values
+    boosterpumpdesignFlow2 = boosterpump_df2['额定排量'].values
+    differInjpump21 = boosterpumpdesignFlow2 * 1.3 - boosterpumpFlow2
+    findex6 = [num for num, x in enumerate(differInjpump21) if x < 0]
+    fid6 = boosterpumpId2[findex6].tolist()
+    fflow6 = differInjpump21[findex6].tolist()
+
+    # # 注水井
+    # wellId2 = well_df2['名称'].values
+    # wellFlow2 = well_df2['注水量'].values
+    # welldesignFlow2 = well_df2['最大处理量'].values
+    # differWell2 = welldesignFlow2 - wellFlow2
+    # findex7 = [num for num, x in enumerate(differWell2) if x < 0]
+    # fid7 = wellId2[findex7].tolist()
+    # fflow7= differWell2[findex7].tolist()
+    limitIndex = (findex1 + findex2 + findex3 + findex4 + findex5 + findex6)
+    limitId = (fid1 + fid2 + fid3 + fid4 + fid5 + fid6)
+    limitFlow = (fflow1 + fflow2 + fflow3 + fflow4 + fflow5 + fflow6)
+    return limitIndex

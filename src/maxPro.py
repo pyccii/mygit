@@ -1,17 +1,26 @@
-import pandas as pd
-import numpy as np
 import datetime
 import os
+
+import numpy as np
+import pandas as pd
+
+from interface import getLibEntity, saveLibEntity, delete_file, upload_file
 from methods import split_str
 from oilCal import oilCal
-from waterCal import waterCal
-from interface import getLibEntity, saveLibEntity, delete_file
 from set import token
+from waterCal import waterCal
 
 
-def opt(filename_oil, filename_water):
+def optPro(filename_oil, filename_water):
     try:
         print(datetime.datetime.now())
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        filePath1 = script_dir.replace("\\", "/") + '/output/' + filename_oil
+        filePath2 = script_dir.replace("\\", "/") + '/output/' + filename_water
+
+        upload_file(filePath1)
+        upload_file(filePath2)
+
         pipeUpstreamPlat = {'CEPI-WHPD': ['CEPI', 'WHPD', 'WHPA-I', 'WHPB-I', 'WHPC'],
                             'CEPJ-WHPF': ['CEPJ'],
                             'WHPA-CEPI': ['WHPA-I'],
@@ -110,7 +119,7 @@ def opt(filename_oil, filename_water):
                     platType3 = getLib2[i4]['myNote']
                     if platId3 in platIdi3 and platType3 == 'Source':
                         test1 = getLib2[i4]['myQSeries']
-                        getLib2[i4]['myQSeries'] = float(getLib2[i4]['myQSeries']) - 300 / 24 / 3600
+                        getLib2[i4]['myQSeries'] = float(getLib2[i4]['myQSeries']) - 150 / 24 / 3600
                         getLib2[i4]['myMSeries'] = getLib2[i4]['myQSeries'] * 1000
                         test2 = getLib2[i4]['myQSeries']
                 save2 = saveLibEntity(filename_oil, getLib2, 'MyStream')
@@ -248,19 +257,19 @@ def opt(filename_oil, filename_water):
             else:
                 pass
 
-        objv = objv_Oil2 + obj_Water2
+        medicPrice = [objv_Oil2[-1] + obj_Water2[-1]]
+        objv = objv_Oil2 + obj_Water2 + medicPrice
         objv_array = np.array(objv)[np.newaxis, :]
         objv_df2 = pd.DataFrame(
             objv_array, columns=['总产油量', '总产气量', '总产水量', '总产液量',
-                                 '混输海管', '油处理系统', '总注水量', '总处理水量',
-                                 '注水泵', '增压泵', '注水管线', '注水井', '注水泵能耗']
+                                 '混输海管', '油处理系统', '油处理药剂', '总注水量', '总处理水量',
+                                 '注水泵', '增压泵', '注水管线', '注水井', '注水泵能耗', '水处理药剂', '总药剂花费']
         )
         script_dir = os.path.dirname(os.path.abspath(__file__))
         dir = script_dir.replace("\\", "/") + "/output/"
         os.makedirs(dir, exist_ok=True)
         print(datetime.datetime.now())
         current_time = int(datetime.datetime.now().timestamp())
-        # file_name =  dir + "{}.xlsx".format(current_time)
         file_name = "{}.xlsx".format(current_time)
         file_path = dir + "{}.xlsx".format(current_time)
         with pd.ExcelWriter(file_path) as writer:
@@ -276,15 +285,11 @@ def opt(filename_oil, filename_water):
         return file_name
 
     except  Exception:
-        print('------------------------exception---------------------')
+        print('------------------------maxProException---------------------')
         script_dir = os.path.dirname(os.path.abspath(__file__))
         dir = script_dir.replace("\\", "/") + "/output/"
         os.makedirs(dir, exist_ok=True)
-        file = '1704422669.xlsx'
-        file_name = dir + file
+        file = '1705149841.xlsx'
         print(datetime.datetime.now())
         return file
 
-# if __name__ == '__main__':
-#     res = opt('oil_set.xls','water_set.xls')
-#     print(res)

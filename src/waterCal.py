@@ -1,3 +1,6 @@
+import json
+
+import numpy as np
 import pandas as pd
 
 from interface import netsim_steady, getLibEntity
@@ -58,7 +61,7 @@ def waterCal(file_name):
                 i_entity = edge_data[j]['myEName']
                 i_Source = edge_data[j]['mySource']
                 i_Target = edge_data[j]['myTarget']
-                i_Note =  edge_data[j]['myNote']
+                i_Note = edge_data[j]['myNote']
                 break
 
         for k in range(len(opt_data)):
@@ -194,14 +197,59 @@ def waterCal(file_name):
     sum_boosterpump_flow = sum(boosterpump_flow[i] * boosterpump_num[i] for i in range(len(boosterpump_flow)))
     sum_pipe_water = sum(pipe_water)
 
+    def linear_interpolation(x, y, x1):
+        if x1 <= x[-1]:
+            idx = np.searchsorted(x, x1)
+            dx = x1 - x[idx - 1]
+            dy = y[idx - 1] + dx * (y[idx] - y[idx - 1]) / (x[idx] - x[idx - 1])
+        else:
+            dy = y[-1] * x1 / x[-1]
+        return dy
+
     # 注水泵能耗,KW
     power = 0
     for k in range(len(injpump_id)):
-        power += injpump_flow[k] * injpump_dP[k] * injpump_num[k] / 3600 / 1000
+        selfId = injpump_id[k]
+        for i in range(len(pump_data)):
+            if pump_data[i]['myName'] == selfId:
+                selfType = pump_data[i]['myCurveId']
+                break
 
-    obj_Water = [sum_well_flow, sum_wsep_water,
-                 sum_injpump_flow, sum_boosterpump_flow,
-                 sum_pipe_water, sum_well_flow, power]
+        for j in range(len(pumpcurve)):
+            if pumpcurve[j]['myName'] == selfType:
+                selfQ = json.loads(pumpcurve[j]['myFlux'])
+                selfH = json.loads(pumpcurve[j]['myHead'])
+                selfP = json.loads(pumpcurve[j]['myPower'])
+                break
+
+        selfNum = injpump_num[k]
+        selfAQ = injpump_flow[k]
+        if selfAQ <= selfQ[-1]:
+            selfAP = linear_interpolation(selfQ, selfP, selfAQ)
+        else:
+            print(injpump_id[k])
+            selfAP = linear_interpolation(selfQ, selfP, selfAQ)
+
+        power += selfNum * selfAP
+
+    waterMedic = 0
+    for i in range(len(wsep_id)):
+        wsepplat1 = wsep_id[i].split('-')[0]
+        wsepLiq = wsep_water[i]
+        for j in range(len(opt_data)):
+            wsepplat2 = opt_data[j]['myName'].split('-')[0]
+            price = opt_data[j]['myNote']
+            if wsepplat2 == wsepplat1 and price != '0':
+                a = json.loads(price)
+                b = json.loads(opt_data[j]['myValue'])
+                waterMedic += wsepLiq * a * b
+
+    obj_Water = [sum_well_flow, sum_wsep_water, sum_injpump_flow,
+                 sum_boosterpump_flow, sum_pipe_water, sum_well_flow, power, waterMedic]
 
     res_water = [pipe_df, injpump_df, boosterpump_df, well_df, wsep_df, obj_Water]
     return res_water
+
+# if __name__ == "__main__":
+#     res = waterCal("water_set.xls")
+#     print(res)

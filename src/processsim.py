@@ -1,17 +1,19 @@
-import pandas as pd
-import numpy as np
 import datetime
 import os
+
+import numpy as np
+import pandas as pd
+
+from interface import getLibEntity, saveLibEntity, delete_file, upload_file
 from methods import split_str
 from oilCal import oilCal
-from waterCal import waterCal
-from interface import getLibEntity, saveLibEntity, delete_file, upload_file
 from set import token
+from waterCal import waterCal
 
 
 def processSim(filename_oil, filename_water):
     try:
-        script_dir = os.path.dirname(os.path.abspath(__file__))
+        script_dir = os.getcwd()
         filePath1 = script_dir.replace("\\", "/") + '/output/' + filename_oil
         filePath2 = script_dir.replace("\\", "/") + '/output/' + filename_water
 
@@ -62,18 +64,18 @@ def processSim(filename_oil, filename_water):
 
         # 6.注水流程计算
         pipe_df, injpump_df, boosterpump_df, well_df, wsep_df, obj_Water = waterCal(filename_water)
-        objv = objv_Oil + obj_Water
+        medicPrice = [objv_Oil[-1] + obj_Water[-1]]
+        objv = objv_Oil + obj_Water + medicPrice
         objv_array = np.array(objv)[np.newaxis, :]
         objv_df = pd.DataFrame(
+
             objv_array, columns=['总产油量', '总产气量', '总产水量', '总产液量',
-                                 '混输海管', '油处理系统', '总注水量', '总处理水量',
-                                 '注水泵', '增压泵', '注水管线', '注水井', '注水泵能耗']
+                                 '混输海管', '油处理系统', '油处理药剂', '总注水量', '总处理水量',
+                                 '注水泵', '增压泵', '注水管线', '注水井', '注水泵能耗', '水处理药剂', '总药剂花费']
         )
-        script_dir = os.path.dirname(os.path.abspath(__file__))
+        script_dir = os.getcwd()
         dir = script_dir.replace("\\", "/") + "/output/"
-        os.makedirs(dir, exist_ok=True)
         current_time = int(datetime.datetime.now().timestamp())
-        # file_name = dir + "{}.xlsx".format(current_time)
         file_name = "{}.xlsx".format(current_time)
         file_path = dir + "{}.xlsx".format(current_time)
         with pd.ExcelWriter(file_path) as writer:
@@ -86,7 +88,6 @@ def processSim(filename_oil, filename_water):
             pipe_df.to_excel(writer, sheet_name='注水管线', index=False, float_format='%.2f')
             well_df.to_excel(writer, sheet_name='注水井', index=False, float_format='%.2f')
             objv_df.to_excel(writer, sheet_name='目标总览', index=False, float_format='%.2f')
-            # adjusted_df.to_excel(writer, sheet_name='调整方案', index=False, float_format='%.2f')
 
         res_df = [mixpipe_df, sep_df, wsep_df, pipe_df, injpump_df, boosterpump_df, well_df]
         nonlist = []
@@ -114,7 +115,7 @@ def processSim(filename_oil, filename_water):
         print(datetime.datetime.now())
         return file_name
     except  Exception:
-        print('----------exception--------------')
+        print('----------ProcessException--------------')
         print(datetime.datetime.now())
-        file = '1704422531.xlsx'
+        file = '1705149773.xlsx'
         return file

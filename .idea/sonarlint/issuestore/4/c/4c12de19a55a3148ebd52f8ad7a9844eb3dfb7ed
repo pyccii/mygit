@@ -3,9 +3,9 @@ tpython:S1192"PDefine a constant instead of duplicating this literal 'æ°´å¤„
 }python:S117	"ZRename this local variable "filePath1" to match the regular expression ^[_a-z][a-z0-9_]*$.(²Í˜Üıÿÿÿÿ8ÆûçşÌ1
 xpython:S117
 "ZRename this local variable "filePath2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Â«‹ş8ÆûçşÌ1
-Upython:S1481"1Remove the unused local variable "mixpipe_data1".(½ÑÙøÿÿÿÿ8ÆûçşÌ1
-Rpython:S1481'".Remove the unused local variable "pipe_data2".(ë‡á‡ûÿÿÿÿ8ÆûçşÌ1
 Opython:S1481""1Remove the unused local variable "mixpipe_data2".(Ô€õ*8ÆûçşÌ1
+Rpython:S1481'".Remove the unused local variable "pipe_data2".(ë‡á‡ûÿÿÿÿ8ÆûçşÌ1
+Upython:S1481"1Remove the unused local variable "mixpipe_data1".(½ÑÙøÿÿÿÿ8ÆûçşÌ1
 Rpython:S1481".Remove the unused local variable "pipe_data1".( ÔµÑşÿÿÿÿ8ÆûçşÌ1
 xpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 67 to the 15 allowed.(’¨ÑÔıÿÿÿÿ8ÆûçşÌ1
 Opython:S5806["+Rename this variable; it shadows a builtin.(…„¡ıÿÿÿÿ8ÇûçşÌ1
