@@ -1,0 +1,36 @@
+
+hpython:S1192"IDefine a constant instead of duplicating this literal '/output/' 3 times.(їЌгѓ8ьАг—Р1
+zpython:S117p"WRename this local variable "Source" to match the regular expression ^[_a-z][a-z0-9_]*$.(ОЁЬгяяяяя8ьАг—Р1
+python:S1173"\Rename this local variable "designFlow1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬Ыѕ…яяяяя8ьАг—Р1
+xpython:S117І"ZRename this local variable "differObj" to match the regular expression ^[_a-z][a-z0-9_]*$.(Еюи"8ьАг—Р1
+python:S1174"\Rename this local variable "differPipe1" to match the regular expression ^[_a-z][a-z0-9_]*$.(шюЄАшяяяя8ьАг—Р1
+ypython:S117•"[Rename this local variable "energyList" to match the regular expression ^[_a-z][a-z0-9_]*$.(ТПВ18ьАг—Р1
+xpython:S117"ZRename this local variable "filePath1" to match the regular expression ^[_a-z][a-z0-9_]*$.(їЌгѓ8ьАг—Р1
+wpython:S117"ZRename this local variable "filePath2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ё–яi8ьАг—Р1
+{python:S117D"XRename this local variable "getLib1" to match the regular expression ^[_a-z][a-z0-9_]*$.(увУ•яяяяя8ьАг—Р1
+zpython:S117О"[Rename this local variable "medicPrice" to match the regular expression ^[_a-z][a-z0-9_]*$.(яПЖЊ8ьАг—Р1
+xpython:S117№"ZRename this local variable "minEnergy" to match the regular expression ^[_a-z][a-z0-9_]*$.(э•ч:8ьАг—Р1
+~python:S117є"ZRename this local variable "minPumpId" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ь…Џ§эяяяя8ьАг—Р1
+|python:S1178"YRename this local variable "mpipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ыџЇґяяяяя8ьАг—Р1
+python:S117Џ"[Rename this local variable "obj_Water2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ў¤—Йэяяяя8ьАг—Р1
+xpython:S117*"ZRename this local variable "objv_Oil1" to match the regular expression ^[_a-z][a-z0-9_]*$.(От›­8ьАг—Р1
+~python:S1177"`Rename this local variable "pipeFlaseIndex1" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ї·ДО8ьАг—Р1
+}python:S1172"ZRename this local variable "pipeFlow1" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ідзпяяяяя8ьАг—Р1
+{python:S1171"XRename this local variable "pipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ОШиуюяяяя8ьАг—Р1
+„python:S117"aRename this local variable "pipeUpstreamPlat" to match the regular expression ^[_a-z][a-z0-9_]*$.(Щ€ђЁюяяяя8ьАг—Р1
+|python:S117G"YRename this local variable "platType" to match the regular expression ^[_a-z][a-z0-9_]*$.(укЗ±ыяяяя8ьАг—Р1
+}python:S117–"YRename this local variable "pumpList" to match the regular expression ^[_a-z][a-z0-9_]*$.(•э›сыяяяя8ьАг—Р1
+xpython:S117ґ"YRename this local variable "resCheck" to match the regular expression ^[_a-z][a-z0-9_]*$.(јЌзЪ8ьАг—Р1
+ypython:S117v"[Rename this local variable "sheetIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(„±тТ8ьАг—Р1
+}python:S117u"ZRename this local variable "sheetName" to match the regular expression ^[_a-z][a-z0-9_]*$.(ЙЮА яяяяя8ьАг—Р1
+}python:S117~"ZRename this local variable "sourceNum" to match the regular expression ^[_a-z][a-z0-9_]*$.(фљс…яяяяя8ьАг—Р1
+|python:S117™"]Rename this local variable "thisPumpName" to match the regular expression ^[_a-z][a-z0-9_]*$.(ёЁ‘м8ьАг—Р1
+spython:S1542"ORename function "optEnergy" to match the regular expression ^[a-z_][a-z0-9_]*$.(ФбРУэяяяя8ьАг—Р1
+Ppython:S1481&",Remove the unused local variable "cep_upsp".(с уЏяяяяя8ьАг—Р1
+Hpython:S1481M")Remove the unused local variable "save1".(њ¬‚ћ8ьАг—Р1
+Lpython:S1481І"-Remove the unused local variable "differObj".(Еюи"8ьАг—Р1
+xpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 53 to the 15 allowed.(ФбРУэяяяя8ьАг—Р1
+lpython:S6729@"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(л‰пщ8ьАг—Р1
+lpython:S6729W"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(Е­†щ8ьАг—Р1
+Jpython:S5806b"+Rename this variable; it shadows a builtin.(тьЊг8ьАг—Р1
+Kpython:S5806Ш"+Rename this variable; it shadows a builtin.(џ‡— 8—Эд—Р1

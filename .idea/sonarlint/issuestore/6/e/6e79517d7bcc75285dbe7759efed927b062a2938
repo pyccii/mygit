@@ -1,0 +1,69 @@
+
+qpython:S117™"SRename this local variable "Id" to match the regular expression ^[_a-z][a-z0-9_]*$.(É‘ï~8æÙºæÎ1
+upython:S117j"WRename this local variable "Liquid" to match the regular expression ^[_a-z][a-z0-9_]*$.(åáà»8çÙºæÎ1
+{python:S117—"WRename this local variable "Source" to match the regular expression ^[_a-z][a-z0-9_]*$.(Î¨Üãÿÿÿÿÿ8çÙºæÎ1
+ypython:S117i"VRename this local variable "Water" to match the regular expression ^[_a-z][a-z0-9_]*$.(ƒñœ©úÿÿÿÿ8çÙºæÎ1
+qpython:S117k"SRename this local variable "Wc" to match the regular expression ^[_a-z][a-z0-9_]*$.(Î8çÙºæÎ1
+wpython:S117n"TRename this local variable "Wc1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ßÉ†üÿÿÿÿ8çÙºæÎ1
+python:S1176"\Rename this local variable "designFlow1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬Û¾…ÿÿÿÿÿ8çÙºæÎ1
+€python:S117§"\Rename this local variable "designFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(õ¸Ş¿ùÿÿÿÿ8çÙºæÎ1
+python:S1177"\Rename this local variable "differPipe1" to match the regular expression ^[_a-z][a-z0-9_]*$.(øşªÀøÿÿÿÿ8çÙºæÎ1
+€python:S117¨"\Rename this local variable "differPipe2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ï¢ãøûÿÿÿÿ8çÙºæÎ1
+zpython:S117±"[Rename this local variable "differSep2" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å¤¨¶8çÙºæÎ1
+|python:S117Ã"]Rename this local variable "differWpipe2" to match the regular expression ^[_a-z][a-z0-9_]*$.(“Û´8çÙºæÎ1
+xpython:S117"ZRename this local variable "filePath1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¿ãƒ8•«ßÏ1
+wpython:S117"ZRename this local variable "filePath2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¨–ÿi8•«ßÏ1
+{python:S117G"XRename this local variable "getLib1" to match the regular expression ^[_a-z][a-z0-9_]*$.(óâÓ•ÿÿÿÿÿ8çÙºæÎ1
+{python:S117t"XRename this local variable "getLib2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ò„è‹úÿÿÿÿ8çÙºæÎ1
+vpython:S117–"XRename this local variable "getLib3" to match the regular expression ^[_a-z][a-z0-9_]*$.(ïßÜ8çÙºæÎ1
+wpython:S117é"XRename this local variable "getLib4" to match the regular expression ^[_a-z][a-z0-9_]*$.(¥ò‰8çÙºæÎ1
+ypython:S117£"ZRename this local variable "limitFlow" to match the regular expression ^[_a-z][a-z0-9_]*$.(¡õó8çÙºæÎ1
+|python:S117¢"XRename this local variable "limitId" to match the regular expression ^[_a-z][a-z0-9_]*$.(³Í‘ıÿÿÿÿ8çÙºæÎ1
+python:S117¡"[Rename this local variable "limitIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÈÒ°úÿÿÿÿ8çÙºæÎ1
+zpython:S117„"[Rename this local variable "medicPrice" to match the regular expression ^[_a-z][a-z0-9_]*$.(­´ÌÑ8¹Òß•Ğ1
+|python:S117;"YRename this local variable "mpipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ûŸ¯´ÿÿÿÿÿ8çÙºæÎ1
+python:S117Ÿ"[Rename this local variable "obj_Water2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¢¤—Éıÿÿÿÿ8èÙºæÎ1
+xpython:S117*"ZRename this local variable "objv_Oil1" to match the regular expression ^[_a-z][a-z0-9_]*$.(Îò›­8èÙºæÎ1
+}python:S117~"ZRename this local variable "objv_Oil2" to match the regular expression ^[_a-z][a-z0-9_]*$.(»‹„ÿÿÿÿÿ8èÙºæÎ1
+~python:S117:"`Rename this local variable "pipeFlaseIndex1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¯·ÄÎ8èÙºæÎ1
+}python:S1175"ZRename this local variable "pipeFlow1" to match the regular expression ^[_a-z][a-z0-9_]*$.(²äçïÿÿÿÿÿ8èÙºæÎ1
+xpython:S117¦"ZRename this local variable "pipeFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(§Óû/8èÙºæÎ1
+{python:S1174"XRename this local variable "pipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎØèóşÿÿÿÿ8èÙºæÎ1
+|python:S117¥"XRename this local variable "pipeId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(”¿”´ÿÿÿÿÿ8èÙºæÎ1
+„python:S117"aRename this local variable "pipeUpstreamPlat" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ùˆ¨şÿÿÿÿ8èÙºæÎ1
+vpython:S117h"XRename this local variable "platId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(°¯àâ8èÙºæÎ1
+vpython:S117v"XRename this local variable "platId3" to match the regular expression ^[_a-z][a-z0-9_]*$.(×›¶ 8èÙºæÎ1
+|python:S117p"YRename this local variable "platIdi3" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÙúØ®ûÿÿÿÿ8èÙºæÎ1
+|python:S117J"YRename this local variable "platType" to match the regular expression ^[_a-z][a-z0-9_]*$.(óêÇ±ûÿÿÿÿ8èÙºæÎ1
+}python:S117w"ZRename this local variable "platType3" to match the regular expression ^[_a-z][a-z0-9_]*$.(Œİé€ıÿÿÿÿ8èÙºæÎ1
+{python:S117÷"WRename this local variable "pumpId" to match the regular expression ^[_a-z][a-z0-9_]*$.(ï´€ıÿÿÿÿ8èÙºæÎ1
+xpython:S117¯"YRename this local variable "sepFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(áèÕÛ8èÙºæÎ1
+{python:S117®"WRename this local variable "sepId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(»Ä“Ÿıÿÿÿÿ8èÙºæÎ1
+ƒpython:S117°"_Rename this local variable "sepdesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(­–ÇÖşÿÿÿÿ8èÙºæÎ1
+zpython:S117Á"[Rename this local variable "wpipeFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ˆñè 8èÙºæÎ1
+xpython:S117À"YRename this local variable "wpipeId2" to match the regular expression ^[_a-z][a-z0-9_]*$.(â±¨Ö8èÙºæÎ1
+…python:S117Â"aRename this local variable "wpipedesignFlow2" to match the regular expression ^[_a-z][a-z0-9_]*$.(ØÙÒûÿÿÿÿ8èÙºæÎ1
+jpython:S1542"LRename function "optPro" to match the regular expression ^[a-z_][a-z0-9_]*$.(¡ù*8€’üĞ1
+Mpython:S1481y")Remove the unused local variable "test1".(Ôı êùÿÿÿÿ8éÙºæÎ1
+Ipython:S1481ñ"*Remove the unused local variable "test32".(ÎÊÈL8éÙºæÎ1
+Hpython:S1481T")Remove the unused local variable "save1".(œ¬‚8éÙºæÎ1
+Mpython:S1481}")Remove the unused local variable "save2".(İÊ±ıùÿÿÿÿ8éÙºæÎ1
+Qpython:S1481*"2Replace unused local variable "sep_out1" with "_".(Îò›­8éÙºæÎ1
+Mpython:S1481ò"(Remove the unused local variable "save".(İ¬šïüÿÿÿÿ8éÙºæÎ1
+Opython:S1481î"*Remove the unused local variable "test31".(ãëÔæıÿÿÿÿ8éÙºæÎ1
+Ppython:S1481*"1Replace unused local variable "sep_df1" with "_".(Îò›­8éÙºæÎ1
+Ppython:S1481&",Remove the unused local variable "cep_upsp".(ñ óÿÿÿÿÿ8éÙºæÎ1
+Hpython:S1481|")Remove the unused local variable "test2".(Ã‘äæ8éÙºæÎ1
+rpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 63 to the 15 allowed.(¡ù*8éÙºæÎ1
+lpython:S6729C"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(ë‰ïù8éÙºæÎ1
+Spython:S1135Q"4Complete the task associated to this "TODO" comment.(§—«8éÙºæÎ1
+Xpython:S1135R"4Complete the task associated to this "TODO" comment.(ÎÅ•¾úÿÿÿÿ8éÙºæÎ1
+lpython:S6729^"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(Å­†ù8éÙºæÎ1
+qpython:S6729o"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(šüí¿ÿÿÿÿÿ8éÙºæÎ1
+Kpython:S5806‡"+Rename this variable; it shadows a builtin.(¾æüÿ8éÙºæÎ1
+Cpython:S125¶"Remove this commented out code.(Ğúöúÿÿÿÿ8éÙºæÎ1
+>python:S125È"Remove this commented out code.(Õ¼Ç‰8éÙºæÎ1
+Cpython:S125Ñ"Remove this commented out code.(Ñ¤’÷øÿÿÿÿ8éÙºæÎ1
+Cpython:S125Ù"Remove this commented out code.(¸’„ûÿÿÿÿ8éÙºæÎ1
+Hpython:S108‚")Either remove or fill this block of code.(ã‘Û¾8éÙºæÎ1
+Kpython:S5806"+Rename this variable; it shadows a builtin.(Ÿ‡— 8éÙºæÎ1

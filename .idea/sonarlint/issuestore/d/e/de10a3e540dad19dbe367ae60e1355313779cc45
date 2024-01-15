@@ -1,0 +1,36 @@
+
+hpython:S1192"IDefine a constant instead of duplicating this literal '/output/' 3 times.(¿ãƒ8»½‚˜Ğ1
+zpython:S117i"WRename this local variable "Source" to match the regular expression ^[_a-z][a-z0-9_]*$.(Î¨Üãÿÿÿÿÿ8»½‚˜Ğ1
+python:S117."\Rename this local variable "designFlow1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬Û¾…ÿÿÿÿÿ8»½‚˜Ğ1
+~python:S117«"ZRename this local variable "differObj" to match the regular expression ^[_a-z][a-z0-9_]*$.(¤”ú´ıÿÿÿÿ8»½‚˜Ğ1
+python:S117/"\Rename this local variable "differPipe1" to match the regular expression ^[_a-z][a-z0-9_]*$.(øşªÀøÿÿÿÿ8»½‚˜Ğ1
+ypython:S117"[Rename this local variable "energyList" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÒÏÂ18»½‚˜Ğ1
+xpython:S117"ZRename this local variable "filePath1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¿ãƒ8»½‚˜Ğ1
+wpython:S117"ZRename this local variable "filePath2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¨–ÿi8»½‚˜Ğ1
+{python:S117="XRename this local variable "getLib1" to match the regular expression ^[_a-z][a-z0-9_]*$.(óâÓ•ÿÿÿÿÿ8»½‚˜Ğ1
+xpython:S117²"ZRename this local variable "minEnergy" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı•÷:8»½‚˜Ğ1
+~python:S117³"ZRename this local variable "minPumpId" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ü…§ıÿÿÿÿ8»½‚˜Ğ1
+|python:S1171"YRename this local variable "mpipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ûŸ¯´ÿÿÿÿÿ8»½‚˜Ğ1
+python:S117ˆ"[Rename this local variable "obj_Water2" to match the regular expression ^[_a-z][a-z0-9_]*$.(¢¤—Éıÿÿÿÿ8»½‚˜Ğ1
+xpython:S117*"ZRename this local variable "objv_Oil1" to match the regular expression ^[_a-z][a-z0-9_]*$.(Îò›­8»½‚˜Ğ1
+~python:S1170"`Rename this local variable "pipeFlaseIndex1" to match the regular expression ^[_a-z][a-z0-9_]*$.(¯·ÄÎ8»½‚˜Ğ1
+}python:S117-"ZRename this local variable "pipeFlow1" to match the regular expression ^[_a-z][a-z0-9_]*$.(²äçïÿÿÿÿÿ8»½‚˜Ğ1
+{python:S117,"XRename this local variable "pipeId1" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎØèóşÿÿÿÿ8»½‚˜Ğ1
+„python:S117"aRename this local variable "pipeUpstreamPlat" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ùˆ¨şÿÿÿÿ8»½‚˜Ğ1
+|python:S117@"YRename this local variable "platType" to match the regular expression ^[_a-z][a-z0-9_]*$.(óêÇ±ûÿÿÿÿ8»½‚˜Ğ1
+}python:S117"YRename this local variable "pumpList" to match the regular expression ^[_a-z][a-z0-9_]*$.(•ı›ñûÿÿÿÿ8»½‚˜Ğ1
+xpython:S117­"YRename this local variable "resCheck" to match the regular expression ^[_a-z][a-z0-9_]*$.(¼çÚ8»½‚˜Ğ1
+ypython:S117o"[Rename this local variable "sheetIndex" to match the regular expression ^[_a-z][a-z0-9_]*$.(„±òÒ8»½‚˜Ğ1
+}python:S117n"ZRename this local variable "sheetName" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÉŞÀ ÿÿÿÿÿ8»½‚˜Ğ1
+}python:S117w"ZRename this local variable "sourceNum" to match the regular expression ^[_a-z][a-z0-9_]*$.(ôšñ…ÿÿÿÿÿ8»½‚˜Ğ1
+|python:S117’"]Rename this local variable "thisPumpName" to match the regular expression ^[_a-z][a-z0-9_]*$.(¸¨‘ì8»½‚˜Ğ1
+kpython:S1542"LRename function "optOpe" to match the regular expression ^[a-z_][a-z0-9_]*$.(§ØŠŞ8 „ƒ˜Ğ1
+Ppython:S1481&",Remove the unused local variable "cep_upsp".(ñ óÿÿÿÿÿ8»½‚˜Ğ1
+Qpython:S1481*"2Replace unused local variable "plat_df1" with "_".(Îò›­8»½‚˜Ğ1
+Hpython:S1481F")Remove the unused local variable "save1".(œ¬‚8»½‚˜Ğ1
+Rpython:S1481«"-Remove the unused local variable "differObj".(¤”ú´ıÿÿÿÿ8»½‚˜Ğ1
+spython:S3776"TRefactor this function to reduce its Cognitive Complexity from 53 to the 15 allowed.(§ØŠŞ8»½‚˜Ğ1
+lpython:S67299"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(ë‰ïù8»½‚˜Ğ1
+lpython:S6729P"MUse "np.nonzero" when only the condition parameter is provided to "np.where".(Å­†ù8»½‚˜Ğ1
+Jpython:S5806["+Rename this variable; it shadows a builtin.(òüŒã8»½‚˜Ğ1
+Kpython:S5806Ğ"+Rename this variable; it shadows a builtin.(Ÿ‡— 8»½‚˜Ğ1
